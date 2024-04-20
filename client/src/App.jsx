@@ -24,11 +24,11 @@ function App() {
           <div>
             <div>
               <h1>Current Location</h1>
-              <h3>1234 Dallas Road Dallas, TX 75149</h3>
+              <p>1234 Dallas Road Dallas, TX 75149</p>
             </div>
             <div>
               <h1>Today's Hours</h1>
-              <h3>11:30pm-7pm</h3>
+              <p>11:30pm-7pm</p>
             </div>
           </div>
           <h2>Find our full hours and location schedule here!</h2>

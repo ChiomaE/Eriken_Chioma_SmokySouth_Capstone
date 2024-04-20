@@ -1,13 +1,31 @@
 import './nav.css'
+import { Link } from 'react-router-dom'
+import cartIcon from './shopping-bag.png'
 
 export default function Nav () {
+
+    const cart = {
+        totalCount: 2,
+    }
     return (
         <div className='Nav'>
-        <h1 className='logo'>Smoky South BBQ</h1>
+        <Link to='/' className='logo' style={{textDecoration: 'none', color: 'inherit'}}>Smoky South BBQ</Link>
         <div className='nav-sub'>
-            <h3>Location</h3>
-            <h3>Menu</h3>
-            <h3>About</h3>
+
+            <Link to='/menu'>
+                <h3>Menu</h3>
+            </Link>
+            
+
+            <Link to='/about'>
+                <h3>About</h3>
+            </Link>
+            
+            <Link to="/cart">
+                <img src={cartIcon} style={{width: '25px', height: "25px"}}/>
+                {cart.totalCount > 0 && <span>{cart.totalCount}</span>}
+            </Link>
+            
         </div>
     </div>
     )

@@ -11,7 +11,6 @@ export default function Nav () {
         <div className='links'>
             Links
             <p>Menu</p>
-            <p>Location</p>
             <p>About</p>
         </div>
         <div className='hours'>

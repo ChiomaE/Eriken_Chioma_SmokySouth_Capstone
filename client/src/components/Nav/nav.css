@@ -41,4 +41,11 @@
     display: flex;
     gap: 45px;
     padding-bottom: 25px;
+    list-style: none;
+    
+}
+
+.nav-sub a {
+    text-decoration: none;
+    color: inherit;
 }
