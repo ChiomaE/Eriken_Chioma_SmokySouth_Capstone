@@ -39,6 +39,7 @@
 .nav-sub {
     font-family: 'Rockwell', sans-serif;
     display: flex;
+    align-items: center;
     gap: 45px;
     padding-bottom: 25px;
     list-style: none;

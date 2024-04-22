@@ -6,7 +6,8 @@ import locationImg from './Location.jpg'
 import { useEffect, useReducer } from 'react'
 import { getAll } from '.././src/services/foodService'
 import Card from './components/Card/Card'
-//AppRoutes import would go here
+import { Routes } from 'react-router-dom'
+import AppRoutes from './AppRoutes'
 
 const initialState = {foods: []}
 
@@ -29,8 +30,9 @@ function App() {
 
   return (
     <>
-    
+      
       <Nav />
+      <AppRoutes />
       <div className='splashImg'>
         <img src={homeSplash} />
         <div className='overlay'>
