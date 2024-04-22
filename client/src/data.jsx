@@ -10,7 +10,7 @@ export const food = [
       name: "Smoky South Burger",
       foodType: "Burger",
       imageUrl: smokySouthImg, 
-      price: 10.99,
+      price: 10,
       description: "Our specialty- quarter ounce burger, cheddar cheese, and our house sauce on a toasted wheat bun.",
       featured: true
     },
@@ -21,7 +21,7 @@ export const food = [
         name: "Saucy Burger",
         foodType: "Burger",
         imageUrl: saucyImg, 
-        price: 10.99,
+        price: 10,
         description: "Two smoked patties, cheddar cheese, peppers, tomatos, pickles, and our signature Smoky Sauce on a sesame seed bun. Comes with a side of fries.",
         featured: true
       },
@@ -32,7 +32,7 @@ export const food = [
         name: "Double Cheesebuger",
         foodType: "Burger",
         imageUrl: 'doubleCheese.jpg', 
-        price: 8.99,
+        price: 8,
         description: "Classic double patty with cheddar cheese, peppers, mushrooms, mayo, and mustard on a sesame seed bun. Comes with a side of fries."
       },
       {
@@ -42,7 +42,7 @@ export const food = [
         name: "Saucy Chicken Burger",
         foodType: "Burger",
         imageUrl: 'saucyChicken.jpg', 
-        price: 9.99,
+        price: 9,
         description: "Fried chicken patty topped with lettuce and Smoky Sauce on a bed of pickles. Comes with a side of fries."
       },
       {
@@ -52,7 +52,7 @@ export const food = [
         name: "Hot Chicken Burger",
         foodType: "Burger",
         imageUrl: 'hotChicken.jpg', 
-        price: 9.99,
+        price: 9,
         description: "Fried chicken patty tossed in a special firey seasoning. Topped with coleslaw and pickles. Comes with a side of fries.",
         featured: true
       },
@@ -63,7 +63,7 @@ export const food = [
         name: "Seasoned Fries",
         foodType: "Side",
         imageUrl: 'fries.jpg', 
-        price: 3.00,
+        price: 3,
         description: "Fresh fries tossed in Smoky South seasonings."
       },
       {
@@ -73,7 +73,7 @@ export const food = [
         name: "Steamed Corn",
         foodType: "Side",
         imageUrl: 'corn.jpg', 
-        price: 2.00,
+        price: 2,
         description: "Sweet kernal corn steamed just right and tossed in seasonings."
       },
       {
@@ -82,7 +82,7 @@ export const food = [
         },
         name: "Fried Pickles",
         foodType: "Side",
-        price: 3.00,
+        price: 3,
         description: "Fresh pickles fried and tossed in Smoky South seasonings."
       },
       {
@@ -91,7 +91,7 @@ export const food = [
         },
         name: "Fountain Soda",
         foodType: "Drink",
-        price: 1.50,
+        price: 2,
         description: "Sodas and other fountain drinks"
       },
       {
@@ -100,7 +100,7 @@ export const food = [
         },
         name: "House Lemonade",
         foodType: "Drink",
-        price: 2.50,
+        price: 3,
         description: "Lemonade made fresh daily"
       },
       {
@@ -109,7 +109,7 @@ export const food = [
         },
         name: "Sweet Tea",
         foodType: "Drink",
-        price: 2.50,
+        price: 2,
         description: "Taste a traditional family recipe! Made fresh daily."
       },
       {
@@ -119,7 +119,7 @@ export const food = [
         name: "Milkshakes",
         foodType: "Dessert",
         imageUrl: 'chocOreoShake.jpg', 
-        price: 5.00,
+        price: 6,
         description: "Thick sweet treats to cap a great meal! Flavors: Vanilla, Chocolate, Strawberry"
       },
       {
@@ -128,7 +128,7 @@ export const food = [
         },
         name: "Peach Cobbler",
         foodType: "Dessert",
-        price: 3.00,
+        price: 3,
         description: "Fresh peaches in a golden crust."
       }
 ]

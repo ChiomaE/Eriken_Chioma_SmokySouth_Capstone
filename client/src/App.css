@@ -1,8 +1,7 @@
 @font-face {
   font-family: 'Quicksand';
-  src: local('QUICKSAND-VARIABLEFONT_WGHT.TTF');
+  src: url('QUICKSAND-VARIABLEFONT_WGHT.TTF');
 }
-
 .splashImg {
   display: flex;
 }
@@ -24,6 +23,7 @@ img {
 }
 
 .locationInfo {
+  font-family: 'Quicksand';
   display: flex;
   align-items: center;
   justify-content: center;
