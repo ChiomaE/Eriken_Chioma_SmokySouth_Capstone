@@ -12,9 +12,9 @@ export default function Nav () {
         <Link to='/' className='logo' style={{textDecoration: 'none', color: 'inherit'}}>Smoky South BBQ</Link>
         <div className='nav-sub'>
 
-            <Link to='/menu'>
+            {/* <Link to='/menu'>
                 <h3>Menu</h3>
-            </Link>
+            </Link> */}
             
 
             <Link to='/about'>

@@ -3,11 +3,33 @@ import Nav from './components/Nav/Nav'
 import homeSplash from './homeSplash.jpg'
 import Footer from './components/Footer/Footer'
 import locationImg from './Location.jpg'
+import { useEffect, useReducer } from 'react'
+import { getAll } from '.././src/services/foodService'
+import Card from './components/Card/Card'
+//AppRoutes import would go here
+
+const initialState = {foods: []}
+
+const reducer =(state, action) => {
+  switch(action.type){
+    case 'FOODS_LOADED':
+      return {...state, foods: action.payload}
+    default:
+      return state
+  }
+}
 
 function App() {
+  const [state, dispatch] = useReducer(reducer, initialState)
+  const{foods} = state;
+
+  useEffect( () => {
+    getAll().then(foods => dispatch({type: 'FOODS_LOADED', payload:foods}))
+  }, [])
 
   return (
     <>
+    
       <Nav />
       <div className='splashImg'>
         <img src={homeSplash} />
@@ -15,8 +37,7 @@ function App() {
           <h1>Made fresh with authentic Texas flavor</h1>
           </div>
       </div>
-      <h1 style={{textAlign: "center", fontFamily: "sans-serif", paddingTop: "15px"}}>Featured Items</h1>
-
+      
 
       <div className='locationInfo'>
         <img className='locationImg' src={locationImg}></img>
@@ -35,10 +56,14 @@ function App() {
         </div>
         
       </div>
+
+      <h1 style={{textAlign: "center", fontFamily: "sans-serif", paddingTop: "15px"}}>Menu</h1>
+        <Card foods = {foods}/>
       
 
 
       <Footer />
+      
     </>
   )
 }
