@@ -116,11 +116,11 @@ export const food = [
         _id: {
           $oid: "662271d61702377477efec45"
         },
-        name: "Milkshakes",
+        name: "Chocolate Oreo Milkshake",
         foodType: "Dessert",
         imageUrl: 'chocOreoShake.jpg', 
         price: 6,
-        description: "Thick sweet treats to cap a great meal! Flavors: Vanilla, Chocolate, Strawberry"
+        description: "Thick sweet treats to cap a great meal!"
       },
       {
         _id: {

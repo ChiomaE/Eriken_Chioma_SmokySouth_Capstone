@@ -1,10 +1,48 @@
 import React from 'react'
 import './cart.css'
 import { useCart } from '../../hooks/useCart'
+import Title from '../../components/Title/Title'
+import {Link} from 'react-router-dom'
 
 export default function Cart() {
     const{cart} =useCart()
     return (
-        <div>{cart.items.length}</div>
+        <div className='Cart'>
+            <Title title="Cart" />
+
+            {cart && cart.items.length > 0 &&
+                <div className="container">
+                    <ul className='cartList'>
+                        {cart.items.map(item => <li key={item.food.id}>
+                            <div className='foodInfo'>
+                                {item.food.name}
+                                {/* Modal for food item */}
+                                <div className='priceandbtn'>
+                                    ${item.price}
+                                    <button className='deleteBtn'>Delete Item</button>
+                                </div>
+                                
+                            </div>
+
+                            
+                        </li>)}
+                        
+                    </ul>
+
+                    <div className='checkout'>
+                        <div className='totalPrice'>Total: ${cart.totalPrice}</div>
+                        
+                        <button>
+                            <Link to='/checkout' /* style={{color:'white', textDecoration: 'none' }} */>Checkout</Link>
+                        </button>
+                    </div>
+                    
+
+                </div>
+            }
+
+        
+        </div>
+        
     )
 }
