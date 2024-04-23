@@ -6,6 +6,8 @@ import {Link} from 'react-router-dom'
 
 export default function Cart() {
     const{cart, removeFromCart, changeQuantity} = useCart()
+
+    console.log("Cart items:", cart.items);
     return (
         <div className='Cart'>
             <Title title="Cart" />

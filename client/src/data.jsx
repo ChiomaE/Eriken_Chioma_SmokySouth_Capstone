@@ -1,5 +1,11 @@
-import smokySouthImg from './assets/images/smokySouth.jpg'
-import saucyImg from './assets/images/Saucy.jpg'
+import smokySouthImg from './assets/images/smokySouth.jpg';
+import saucyImg from './assets/images/Saucy.jpg';
+import doubleCheeseImg from './assets/images/doubleCheese.jpg';
+import saucyChickenImg from './assets/images/saucyChicken.jpg';
+import hotChickenImg from './assets/images/hotChicken.jpg';
+import friesImg from './assets/images/fries.jpg';
+import cornImg from './assets/images/corn.jpg';
+import chocOreoShakeImg from './assets/images/chocOreoShake.jpg';
 
 
 export const food = [
@@ -31,7 +37,7 @@ export const food = [
         },
         name: "Double Cheesebuger",
         foodType: "Burger",
-        imageUrl: 'doubleCheese.jpg', 
+        imageUrl: doubleCheeseImg, 
         price: 8,
         description: "Classic double patty with cheddar cheese, peppers, mushrooms, mayo, and mustard on a sesame seed bun. Comes with a side of fries."
       },
