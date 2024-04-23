@@ -21,12 +21,26 @@ export default function CartProvider({children}) {
         setCartItems(filteredCartItems);
     }
 
-    const addToCart = food => {
-        const cartItem = cartItems.find(item => item.food.id === food.id)
-        setCartItems(...cartItems, {price: food.price})
+    const changeQuantity = (cartItem, newQuantity) =>{
+        const {food} = cartItem;
+
+        const changedCartItem = {
+            ...cartItem, 
+            quantity: newQuantity,
+            price: food.price * newQuantity
+        }
+
+        setCartItems(
+            cartItems.map(item => item.food.id === food.id ? changedCartItem : item)
+        )
     }
 
-    return <CartContext.Provider value={{cart:{items: cartItems, totalPrice, totalCount}, removeFromCart}}>
+    /* const addToCart = food => {
+        const cartItem = cartItems.find(item => item.food.id === food.id)
+        setCartItems(...cartItems, {price: food.price})
+    } */
+
+    return <CartContext.Provider value={{cart:{items: cartItems, totalPrice, totalCount}, removeFromCart, changeQuantity}}>
         {children}
     </CartContext.Provider>
 }

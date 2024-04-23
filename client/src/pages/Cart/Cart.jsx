@@ -5,7 +5,7 @@ import Title from '../../components/Title/Title'
 import {Link} from 'react-router-dom'
 
 export default function Cart() {
-    const{cart, removeFromCart} = useCart()
+    const{cart, removeFromCart, changeQuantity} = useCart()
     return (
         <div className='Cart'>
             <Title title="Cart" />
@@ -17,6 +17,15 @@ export default function Cart() {
                             <div className='foodInfo'>
                                 {item.food.name}
                                 {/* Modal for food item */}
+                                <div>
+                                    <select value={item.quantity}
+                                    onChange={e => changeQuantity(item, Number(e.target.value))}>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>
                                 <div className='priceandbtn'>
                                     ${item.price}
                                     
