@@ -4,8 +4,8 @@ import saucyImg from './assets/images/Saucy.jpg'
 
 export const food = [
   {
-    _id: {
-      $oid: "6622706b1702377477efec30"
+    id: {
+      $oid: "6622706b1702377477efec31"
       },
       name: "Smoky South Burger",
       foodType: "Burger",
@@ -15,7 +15,7 @@ export const food = [
       featured: true
     },
     {
-      _id: {
+      id: {
         $oid: "6622706b1702377477efec30"
         },
         name: "Saucy Burger",
@@ -26,7 +26,7 @@ export const food = [
         featured: true
       },
       {
-        _id: {
+        id: {
           $oid: "662270761702377477efec32"
         },
         name: "Double Cheesebuger",
@@ -36,7 +36,7 @@ export const food = [
         description: "Classic double patty with cheddar cheese, peppers, mushrooms, mayo, and mustard on a sesame seed bun. Comes with a side of fries."
       },
       {
-        _id: {
+        id: {
           $oid: "662270801702377477efec34"
         },
         name: "Saucy Chicken Burger",
@@ -46,7 +46,7 @@ export const food = [
         description: "Fried chicken patty topped with lettuce and Smoky Sauce on a bed of pickles. Comes with a side of fries."
       },
       {
-        _id: {
+        id: {
           $oid: "6622708a1702377477efec36"
         },
         name: "Hot Chicken Burger",
@@ -57,7 +57,7 @@ export const food = [
         featured: true
       },
       {
-        _id: {
+        id: {
           $oid: "662270c91702377477efec38"
         },
         name: "Seasoned Fries",
@@ -67,7 +67,7 @@ export const food = [
         description: "Fresh fries tossed in Smoky South seasonings."
       },
       {
-        _id: {
+        id: {
           $oid: "6622718d1702377477efec3b"
         },
         name: "Steamed Corn",
@@ -77,7 +77,7 @@ export const food = [
         description: "Sweet kernal corn steamed just right and tossed in seasonings."
       },
       {
-        _id: {
+        id: {
           $oid: "662271a31702377477efec3d"
         },
         name: "Fried Pickles",
@@ -86,7 +86,7 @@ export const food = [
         description: "Fresh pickles fried and tossed in Smoky South seasonings."
       },
       {
-        _id: {
+        id: {
           $oid: "662271b11702377477efec3f"
         },
         name: "Fountain Soda",
@@ -95,7 +95,7 @@ export const food = [
         description: "Sodas and other fountain drinks"
       },
       {
-        _id: {
+        id: {
           $oid: "662271bd1702377477efec41"
         },
         name: "House Lemonade",
@@ -104,7 +104,7 @@ export const food = [
         description: "Lemonade made fresh daily"
       },
       {
-        _id: {
+        id: {
           $oid: "662271cd1702377477efec43"
         },
         name: "Sweet Tea",
@@ -113,7 +113,7 @@ export const food = [
         description: "Taste a traditional family recipe! Made fresh daily."
       },
       {
-        _id: {
+        id: {
           $oid: "662271d61702377477efec45"
         },
         name: "Chocolate Oreo Milkshake",
@@ -123,7 +123,7 @@ export const food = [
         description: "Thick sweet treats to cap a great meal!"
       },
       {
-        _id: {
+        id: {
           $oid: "662271db1702377477efec47"
         },
         name: "Peach Cobbler",

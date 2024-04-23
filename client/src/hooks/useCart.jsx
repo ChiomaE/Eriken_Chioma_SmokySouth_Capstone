@@ -7,7 +7,12 @@ export default function CartProvider({children}) {
     const[totalPrice, setTotalPrice] = useState(40);
     const [totalCount, setTotalCount] = useState(3)
 
-    return <CartContext.Provider value={{cart:{items:cartItems, totalPrice, totalCount}}}>
+    const removeFromCart = foodId => {
+        const filteredCartItems = cartItems.filter(item => item.food.id !== foodId);
+        setCartItems(filteredCartItems);
+    }
+
+    return <CartContext.Provider value={{cart:{items: cartItems, totalPrice, totalCount}, removeFromCart,}}>
         {children}
     </CartContext.Provider>
 }

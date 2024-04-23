@@ -5,7 +5,7 @@ import Title from '../../components/Title/Title'
 import {Link} from 'react-router-dom'
 
 export default function Cart() {
-    const{cart} =useCart()
+    const{cart, removeFromCart} = useCart()
     return (
         <div className='Cart'>
             <Title title="Cart" />
@@ -19,11 +19,13 @@ export default function Cart() {
                                 {/* Modal for food item */}
                                 <div className='priceandbtn'>
                                     ${item.price}
-                                    <button className='deleteBtn'>Delete Item</button>
+                                    
                                 </div>
+                                
                                 
                             </div>
 
+                            <button className='deleteBtn' onClick={() => removeFromCart(item.food.id)}>Delete</button>
                             
                         </li>)}
                         
