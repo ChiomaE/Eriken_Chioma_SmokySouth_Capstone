@@ -30,9 +30,11 @@ function App() {
 
   return (
     <>
+
+      <AppRoutes />
+
       
       <Nav />
-      <AppRoutes />
       <div className='splashImg'>
         <img src={homeSplash} />
         <div className='overlay'>
