@@ -10,9 +10,7 @@ import chocOreoShakeImg from './assets/images/chocOreoShake.jpg';
  */
 export const food = [
   {
-    id: {
-      $oid: "6622706b1702377477efec31"
-      },
+      id: "6622706b1702377477efec31",
       name: "Smoky South Burger",
       foodType: "Burger",
       imageUrl: 'smokySouthImg', 
@@ -21,9 +19,7 @@ export const food = [
       featured: true
     },
     {
-      id: {
-        $oid: "6622706b1702377477efec30"
-        },
+        id:"6622706b1702377477efec30",
         name: "Saucy Burger",
         foodType: "Burger",
         imageUrl: 'saucyImg', 
@@ -32,9 +28,7 @@ export const food = [
         featured: true
       },
       {
-        id: {
-          $oid: "662270761702377477efec32"
-        },
+        id: "662270761702377477efec32",
         name: "Double Cheesebuger",
         foodType: "Burger",
         imageUrl: 'doubleCheeseImg', 
@@ -42,9 +36,7 @@ export const food = [
         description: "Classic double patty with cheddar cheese, peppers, mushrooms, mayo, and mustard on a sesame seed bun. Comes with a side of fries."
       },
       {
-        id: {
-          $oid: "662270801702377477efec34"
-        },
+        id: "662270801702377477efec34",
         name: "Saucy Chicken Burger",
         foodType: "Burger",
         imageUrl: 'saucyChicken.jpg', 
@@ -52,9 +44,7 @@ export const food = [
         description: "Fried chicken patty topped with lettuce and Smoky Sauce on a bed of pickles. Comes with a side of fries."
       },
       {
-        id: {
-          $oid: "6622708a1702377477efec36"
-        },
+        id:"6622708a1702377477efec36",
         name: "Hot Chicken Burger",
         foodType: "Burger",
         imageUrl: 'hotChicken.jpg', 
@@ -63,9 +53,7 @@ export const food = [
         featured: true
       },
       {
-        id: {
-          $oid: "662270c91702377477efec38"
-        },
+        id: "662270c91702377477efec38",
         name: "Seasoned Fries",
         foodType: "Side",
         imageUrl: 'fries.jpg', 
@@ -73,9 +61,7 @@ export const food = [
         description: "Fresh fries tossed in Smoky South seasonings."
       },
       {
-        id: {
-          $oid: "6622718d1702377477efec3b"
-        },
+        id: "6622718d1702377477efec3b",
         name: "Steamed Corn",
         foodType: "Side",
         imageUrl: 'corn.jpg', 
@@ -83,45 +69,35 @@ export const food = [
         description: "Sweet kernal corn steamed just right and tossed in seasonings."
       },
       {
-        id: {
-          $oid: "662271a31702377477efec3d"
-        },
+        id: "662271a31702377477efec3d",
         name: "Fried Pickles",
         foodType: "Side",
         price: 3,
         description: "Fresh pickles fried and tossed in Smoky South seasonings."
       },
       {
-        id: {
-          $oid: "662271b11702377477efec3f"
-        },
+        id: "662271b11702377477efec3f",
         name: "Fountain Soda",
         foodType: "Drink",
         price: 2,
         description: "Sodas and other fountain drinks"
       },
       {
-        id: {
-          $oid: "662271bd1702377477efec41"
-        },
+        id: "662271bd1702377477efec41",
         name: "House Lemonade",
         foodType: "Drink",
         price: 3,
         description: "Lemonade made fresh daily"
       },
       {
-        id: {
-          $oid: "662271cd1702377477efec43"
-        },
+        id: "662271cd1702377477efec43",
         name: "Sweet Tea",
         foodType: "Drink",
         price: 2,
         description: "Taste a traditional family recipe! Made fresh daily."
       },
       {
-        id: {
-          $oid: "662271d61702377477efec45"
-        },
+        id: "662271d61702377477efec45",
         name: "Chocolate Oreo Milkshake",
         foodType: "Dessert",
         imageUrl: 'chocOreoShake.jpg', 
@@ -129,9 +105,7 @@ export const food = [
         description: "Thick sweet treats to cap a great meal!"
       },
       {
-        id: {
-          $oid: "662271db1702377477efec47"
-        },
+        id: "662271db1702377477efec47",
         name: "Peach Cobbler",
         foodType: "Dessert",
         price: 3,
